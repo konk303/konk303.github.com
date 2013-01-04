@@ -5,13 +5,14 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Blog Archive - output.konk303.com</title>
+  <title>initializing dotfile repository - output.konk303.com</title>
   <meta name="author" content="Kimihiko NAKAMURA (@konk303)">
 
   
-  <meta name="description" content="Blog Archive 2013 initializing dotfile repository
-Jan 04 2013 posted in dotfiles renewed my blog
-Jan 04 2013 Recent Posts initializing dotfile &hellip;">
+  <meta name="description" content="今までdotfilesはdropboxに置いていて、新しいマシンに移る度にsymlinkして使ってきた。
+けど、去年の途中から職場が変わって 作業環境がwindows(実際にはvm上のcentOS&#8230;)に移った
+dropboxが使えない環境になった
+( &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -20,7 +21,7 @@ Jan 04 2013 Recent Posts initializing dotfile &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://konk303.github.com/blog/archives/">
+  <link rel="canonical" href="http://konk303.github.com/blog/2013/01/04/initializing-dotfile-repository/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -65,45 +66,122 @@ Jan 04 2013 Recent Posts initializing dotfile &hellip;">
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Blog Archive</h1>
+    
+      <h1 class="entry-title">Initializing Dotfile Repository</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-04T21:52:00+09:00" pubdate data-updated="true">2013-01-04 21:52 JST(+0900)</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives">
 
 
+<div class="entry-content"><p>今までdotfilesはdropboxに置いていて、新しいマシンに移る度にsymlinkして使ってきた。<br />
+けど、去年の途中から職場が変わって</p>
 
-  
-  <h2>2013</h2>
-
-<article>
-  
-<h1><a href="/blog/2013/01/04/initializing-dotfile-repository/">initializing dotfile repository</a></h1>
-<time datetime="2013-01-04T21:52:00+09:00" pubdate><span class='month'>Jan</span> <span class='day'>04</span> <span class='year'>2013</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/dotfiles/'>dotfiles</a></span>
-</footer>
+<!--more-->
 
 
-</article>
+<ul>
+<li>作業環境がwindows(実際にはvm上のcentOS&#8230;)に移った</li>
+<li>dropboxが使えない環境になった<br />
+(本当は<strong>githubも使えない</strong>ひどい場所なんだけど、現在はproxy経由でなら一応アクセスできる)</li>
+<li>そうは言いつつ4・5ヶ月たって、場当たり的な設定がかなり増えてきた</li>
+</ul>
 
 
+<p>ということで、ついに重い腰をあげてdotfilesをgitに移すべく作業中。</p>
 
-<article>
-  
-<h1><a href="/blog/2013/01/04/renewed-my-blog/">renewed my blog</a></h1>
-<time datetime="2013-01-04T00:06:00+09:00" pubdate><span class='month'>Jan</span> <span class='day'>04</span> <span class='year'>2013</span></time>
+<p><a href="https://github.com/konk303/dotfiles">konk303/dotfiles</a></p>
 
+<h2>やりたいこと</h2>
 
-</article>
+<ul>
+<li>zshの設定がもうどうにもならないぐらい汚いので、<a href="https://github.com/robbyrussell/oh-my-zsh">oh-my-zsh</a>を使って1回まっさらにする。その後、持ってきたい設定だけ追加で書いていくようにする</li>
+<li>.emacsも同様なので、こちらは<a href="https://github.com/technomancy/emacs-starter-kit">emacs starter kit</a>を使う
+
+<ul>
+<li>ついでに<strong>emacs24に完全移行</strong>したい</li>
+</ul>
+</li>
+<li>install.rb的なものを、rakeでなくthorで書いてみたい</li>
+<li>zsh/emacsどちらも、マシン別に固有の設定を書ける仕組を入れたい
+
+<ul>
+<li>本当は ssh/configやproxy用netrcもそうしたいけど、こっちはpassword書くんでrepoには載せられないかな…</li>
+</ul>
+</li>
+</ul>
 
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Kimihiko NAKAMURA (@konk303)</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-04T21:52:00+09:00" pubdate data-updated="true">2013-01-04 21:52 JST(+0900)</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/dotfiles/'>dotfiles</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://konk303.github.com/blog/2013/01/04/initializing-dotfile-repository/" data-via="konk303" data-counturl="http://konk303.github.com/blog/2013/01/04/initializing-dotfile-repository/" >Tweet</a>
+  
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/01/04/renewed-my-blog/" title="Previous Post: renewed my blog">&laquo; renewed my blog</a>
+      
+      
+    </p>
+  </footer>
 </article>
 
 </div>

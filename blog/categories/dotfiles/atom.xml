@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[output.konk303.com]]></title>
-  <link href="http://konk303.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: dotfiles | output.konk303.com]]></title>
+  <link href="http://konk303.github.com/blog/categories/dotfiles/atom.xml" rel="self"/>
   <link href="http://konk303.github.com/"/>
   <updated>2013-01-04T22:21:05+09:00</updated>
   <id>http://konk303.github.com/</id>
@@ -25,7 +25,7 @@
 
 
 <ul>
-<li>作業環境がwindows(実際にはvm上のcentOS&#8230;)に移った</li>
+<li>作業環境がwindows(実際にはvm上のcentOS...)に移った</li>
 <li>dropboxが使えない環境になった<br />
 (本当は<strong>githubも使えない</strong>ひどい場所なんだけど、現在はproxy経由でなら一応アクセスできる)</li>
 <li>そうは言いつつ4・5ヶ月たって、場当たり的な設定がかなり増えてきた</li>
@@ -55,19 +55,6 @@
 </li>
 </ul>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[renewed my blog]]></title>
-    <link href="http://konk303.github.com/blog/2013/01/04/renewed-my-blog/"/>
-    <updated>2013-01-04T00:06:00+09:00</updated>
-    <id>http://konk303.github.com/blog/2013/01/04/renewed-my-blog</id>
-    <content type="html"><![CDATA[<p>放置していたので仕切り直し。</p>
-
-<h3>TODO:</h3>
-
-<p>write something intersting.</p>
 ]]></content>
   </entry>
   
