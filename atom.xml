@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[output.konk303.com]]></title>
+  <link href="http://konk303.github.com/atom.xml" rel="self"/>
+  <link href="http://konk303.github.com/"/>
+  <updated>2013-01-04T00:24:53+09:00</updated>
+  <id>http://konk303.github.com/</id>
+  <author>
+    <name><![CDATA[Kimihiko NAKAMURA (@konk303)]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[renewed my blog]]></title>
+    <link href="http://konk303.github.com/blog/2013/01/04/renewed-my-blog/"/>
+    <updated>2013-01-04T00:06:00+09:00</updated>
+    <id>http://konk303.github.com/blog/2013/01/04/renewed-my-blog</id>
+    <content type="html"><![CDATA[<p>放置していたので仕切り直し。</p>
+
+<h3>TODO:</h3>
+
+<p>write something intersting.</p>
+]]></content>
+  </entry>
+  
+</feed>
