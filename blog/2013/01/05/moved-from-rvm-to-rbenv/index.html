@@ -5,14 +5,13 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>initializing dotfile repository - output.konk303.com</title>
+  <title>moved from rvm to rbenv - output.konk303.com</title>
   <meta name="author" content="Kimihiko NAKAMURA (@konk303)">
 
   
-  <meta name="description" content="今までdotfilesはdropboxに置いていて、新しいマシンに移る度にsymlinkして使ってきた。
-けど、去年の途中から職場が変わって 作業環境がwindows(実際にはvm上のcentOS&#8230;)に移った
-dropboxが使えない環境になった
-( &hellip;">
+  <meta name="description" content="rvmからrbenvに移った。
+ミニマルでなかなか良い感じ。 いつものようにreadline問題で最初irbが日本語受け入れなかったけど、configureのoptionで無事解決。 インストール brew install brew install rbenv ruby-build
+echo ' &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -21,7 +20,7 @@ dropboxが使えない環境になった
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://konk303.github.com/blog/2013/01/04/initializing-dotfile-repository/">
+  <link rel="canonical" href="http://konk303.github.com/blog/2013/01/05/moved-from-rvm-to-rbenv/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -70,7 +69,7 @@ dropboxが使えない環境になった
   
   <header>
     
-      <h1 class="entry-title">Initializing Dotfile Repository</h1>
+      <h1 class="entry-title">Moved From Rvm to Rbenv</h1>
     
     
       <p class="meta">
@@ -86,48 +85,52 @@ dropboxが使えない環境になった
   
 
 
-<time datetime="2013-01-04T21:52:00+09:00" pubdate data-updated="true">2013-01-04 21:52 JST(+0900)</time>
+<time datetime="2013-01-05T11:41:00+09:00" pubdate data-updated="true">2013-01-05 11:41 JST(+0900)</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>今までdotfilesはdropboxに置いていて、新しいマシンに移る度にsymlinkして使ってきた。<br />
-けど、去年の途中から職場が変わって</p>
+<div class="entry-content"><p><a href="https://rvm.io/">rvm</a>から<a href="https://github.com/sstephenson/rbenv">rbenv</a>に移った。<br />
+ミニマルでなかなか良い感じ。</p>
+
+<p>いつものようにreadline問題で最初irbが日本語受け入れなかったけど、configureのoptionで無事解決。</p>
 
 <!--more-->
 
 
+<h3>インストール</h3>
+
 <ul>
-<li>作業環境がwindows(実際にはvm上のcentOS&#8230;)に移った</li>
-<li>dropboxが使えない環境になった<br />
-(本当は<strong>githubも使えない</strong>ひどい場所なんだけど、現在はproxy経由でなら一応アクセスできる)</li>
-<li>そうは言いつつ4・5ヶ月たって、場当たり的な設定がかなり増えてきた</li>
+<li><code>brew install brew install rbenv ruby-build</code></li>
+<li><code>echo 'eval "$(rbenv init -)"' &gt;&gt; ~/(.bash_profile|.zshenv)</code></li>
+<li><code>rbenv install 1.9.3-p362</code><br />
+これで一応入るんだけど、readlineで日本語がNGだったので</li>
+<li><code>rm -rf ~/.rbenv/versions/1.9.3-p362</code><br />
+(削除はこれだけ)</li>
+<li>configureにオプション追加(<a href="https://github.com/sstephenson/ruby-build">ruby-build</a>にインストール時の設定等書いてある)<br />
+<code>CONFIGURE_OPTS="--with-readline-dir=$(brew --prefix readline)" rbenv install 1.9.3-p362</code></li>
+<li>コマンド(irbとかrakeとか)を使用するためにはrehashが必要<br />
+<code>rbenv rehash</code></li>
+<li><code>rbenv global 1.9.3-p362</code><br />
+(.rbenv/versionに&#8221;1.9.3-p362&#8221;が書き込まれるだけ)</li>
 </ul>
 
 
-<p>ということで、ついに重い腰をあげてdotfilesをgitに移すべく作業中。</p>
+<p>これでオーケー。</p>
 
-<p><a href="https://github.com/konk303/dotfiles">konk303/dotfiles</a></p>
+<pre><code>$  ruby --version
+ruby 1.9.3p362 (2012-12-25 revision 38607) [x86_64-darwin12.2.0]
+</code></pre>
 
-<h2>やりたいこと</h2>
-
-<ul>
-<li>zshの設定がもうどうにもならないぐらい汚いので、<a href="https://github.com/robbyrussell/oh-my-zsh">oh-my-zsh</a>を使って1回まっさらにする。その後、持ってきたい設定だけ追加で書いていくようにする</li>
-<li>.emacsも同様なので、こちらは<a href="https://github.com/technomancy/emacs-starter-kit">emacs starter kit</a>を使う
+<h3>感想</h3>
 
 <ul>
-<li>ついでに<strong>emacs24に完全移行</strong>したい</li>
-</ul>
-</li>
-<li>install.rb的なものを、rakeでなくthorで書いてみたい</li>
-<li>zsh/emacsどちらも、マシン別に固有の設定を書ける仕組を入れたい
-
-<ul>
-<li>本当は ssh/configやproxy用netrcもそうしたいけど、こっちはpassword書くんでrepoには載せられないかな…</li>
-</ul>
-</li>
+<li>gemの管理は、bundler使うようになってからは完全に不要になった。gem listが汚くても全然困らない。<br />rvmのgemsetは最初便利だと思ったけど、bundler登場後はただ面倒くさいだけだった。</li>
+<li>バージョンを必ずパッチレベルまで指定しないといけないのがrvmに比べるとちょっと不便。<br />
+例えば<a href="https://github.com/imathis/octopress">octopress</a>は1.9.3-p194で固定してあって、絶対p362でも動くんだけどp194を使うか.ruby-versionを書き換えないといけない。</li>
+<li>37signalsの人が作るものは、何か同じ匂いがしますね、powとか。シンプルで簡素で、必要な仕事を完璧にこなす。<br />ドキュメントが簡素すぎじゃぁ?と入れる前は思うんだけど、結局ドキュメントを読む必要がほとんどない(デフォルトがきれいだし、詰まった時はコード読んだほうが早い)。</li>
 </ul>
 
 </div>
@@ -152,12 +155,12 @@ dropboxが使えない環境になった
   
 
 
-<time datetime="2013-01-04T21:52:00+09:00" pubdate data-updated="true">2013-01-04 21:52 JST(+0900)</time>
+<time datetime="2013-01-05T11:41:00+09:00" pubdate data-updated="true">2013-01-05 11:41 JST(+0900)</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/dotfiles/'>dotfiles</a>
+    <a class='category' href='/blog/categories/rbenv/'>rbenv</a>
   
 </span>
 
@@ -166,7 +169,7 @@ dropboxが使えない環境になった
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://konk303.github.com/blog/2013/01/04/initializing-dotfile-repository/" data-via="konk303" data-counturl="http://konk303.github.com/blog/2013/01/04/initializing-dotfile-repository/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://konk303.github.com/blog/2013/01/05/moved-from-rvm-to-rbenv/" data-via="konk303" data-counturl="http://konk303.github.com/blog/2013/01/05/moved-from-rvm-to-rbenv/" >Tweet</a>
   
   
   
@@ -177,10 +180,8 @@ dropboxが使えない環境になった
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/01/04/renewed-my-blog/" title="Previous Post: renewed my blog">&laquo; renewed my blog</a>
+        <a class="basic-alignment left" href="/blog/2013/01/04/initializing-dotfile-repository/" title="Previous Post: initializing dotfile repository">&laquo; initializing dotfile repository</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/01/05/moved-from-rvm-to-rbenv/" title="Next Post: moved from rvm to rbenv">moved from rvm to rbenv &raquo;</a>
       
     </p>
   </footer>

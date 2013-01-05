@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[output.konk303.com]]></title>
-  <link href="http://konk303.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: rbenv | output.konk303.com]]></title>
+  <link href="http://konk303.github.com/blog/categories/rbenv/atom.xml" rel="self"/>
   <link href="http://konk303.github.com/"/>
   <updated>2013-01-05T12:42:54+09:00</updated>
   <id>http://konk303.github.com/</id>
@@ -40,7 +40,7 @@
 <li>コマンド(irbとかrakeとか)を使用するためにはrehashが必要<br />
 <code>rbenv rehash</code></li>
 <li><code>rbenv global 1.9.3-p362</code><br />
-(.rbenv/versionに&#8221;1.9.3-p362&#8221;が書き込まれるだけ)</li>
+(.rbenv/versionに"1.9.3-p362"が書き込まれるだけ)</li>
 </ul>
 
 
@@ -59,64 +59,6 @@ ruby 1.9.3p362 (2012-12-25 revision 38607) [x86_64-darwin12.2.0]
 <li>37signalsの人が作るものは、何か同じ匂いがしますね、powとか。シンプルで簡素で、必要な仕事を完璧にこなす。<br />ドキュメントが簡素すぎじゃぁ?と入れる前は思うんだけど、結局ドキュメントを読む必要がほとんどない(デフォルトがきれいだし、詰まった時はコード読んだほうが早い)。</li>
 </ul>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[initializing dotfile repository]]></title>
-    <link href="http://konk303.github.com/blog/2013/01/04/initializing-dotfile-repository/"/>
-    <updated>2013-01-04T21:52:00+09:00</updated>
-    <id>http://konk303.github.com/blog/2013/01/04/initializing-dotfile-repository</id>
-    <content type="html"><![CDATA[<p>今までdotfilesはdropboxに置いていて、新しいマシンに移る度にsymlinkして使ってきた。<br />
-けど、去年の途中から職場が変わって</p>
-
-<!--more-->
-
-
-<ul>
-<li>作業環境がwindows(実際にはvm上のcentOS&#8230;)に移った</li>
-<li>dropboxが使えない環境になった<br />
-(本当は<strong>githubも使えない</strong>ひどい場所なんだけど、現在はproxy経由でなら一応アクセスできる)</li>
-<li>そうは言いつつ4・5ヶ月たって、場当たり的な設定がかなり増えてきた</li>
-</ul>
-
-
-<p>ということで、ついに重い腰をあげてdotfilesをgitに移すべく作業中。</p>
-
-<p><a href="https://github.com/konk303/dotfiles">konk303/dotfiles</a></p>
-
-<h2>やりたいこと</h2>
-
-<ul>
-<li>zshの設定がもうどうにもならないぐらい汚いので、<a href="https://github.com/robbyrussell/oh-my-zsh">oh-my-zsh</a>を使って1回まっさらにする。その後、持ってきたい設定だけ追加で書いていくようにする</li>
-<li>.emacsも同様なので、こちらは<a href="https://github.com/technomancy/emacs-starter-kit">emacs starter kit</a>を使う
-
-<ul>
-<li>ついでに<strong>emacs24に完全移行</strong>したい</li>
-</ul>
-</li>
-<li>install.rb的なものを、rakeでなくthorで書いてみたい</li>
-<li>zsh/emacsどちらも、マシン別に固有の設定を書ける仕組を入れたい
-
-<ul>
-<li>本当は ssh/configやproxy用netrcもそうしたいけど、こっちはpassword書くんでrepoには載せられないかな…</li>
-</ul>
-</li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[renewed my blog]]></title>
-    <link href="http://konk303.github.com/blog/2013/01/04/renewed-my-blog/"/>
-    <updated>2013-01-04T00:06:00+09:00</updated>
-    <id>http://konk303.github.com/blog/2013/01/04/renewed-my-blog</id>
-    <content type="html"><![CDATA[<p>放置していたので仕切り直し。</p>
-
-<h3>TODO:</h3>
-
-<p>write something intersting.</p>
 ]]></content>
   </entry>
   
