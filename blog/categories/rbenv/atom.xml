@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: rbenv | output.konk303.com]]></title>
-  <link href="http://konk303.github.com/blog/categories/rbenv/atom.xml" rel="self"/>
-  <link href="http://konk303.github.com/"/>
-  <updated>2013-01-05T12:57:49+09:00</updated>
-  <id>http://konk303.github.com/</id>
+  <link href="http://output.konk303.com/blog/categories/rbenv/atom.xml" rel="self"/>
+  <link href="http://output.konk303.com/"/>
+  <updated>2013-01-05T13:07:29+09:00</updated>
+  <id>http://output.konk303.com/</id>
   <author>
     <name><![CDATA[Kimihiko NAKAMURA (@konk303)]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[moved from rvm to rbenv]]></title>
-    <link href="http://konk303.github.com/blog/2013/01/05/moved-from-rvm-to-rbenv/"/>
+    <link href="http://output.konk303.com/blog/2013/01/05/moved-from-rvm-to-rbenv/"/>
     <updated>2013-01-05T11:41:00+09:00</updated>
-    <id>http://konk303.github.com/blog/2013/01/05/moved-from-rvm-to-rbenv</id>
+    <id>http://output.konk303.com/blog/2013/01/05/moved-from-rvm-to-rbenv</id>
     <content type="html"><![CDATA[<p><a href="https://rvm.io/">rvm</a>から<a href="https://github.com/sstephenson/rbenv">rbenv</a>に移った。<br />
 ミニマルでなかなか良い感じ。</p>
 

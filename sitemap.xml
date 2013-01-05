@@ -1,27 +1,27 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://konk303.github.com/blog/2013/01/04/renewed-my-blog/</loc>
+        <loc>http://output.konk303.com/blog/2013/01/04/renewed-my-blog/</loc>
         <lastmod>2013-01-05T11:10:41+09:00</lastmod>
     </url>
     <url>
-        <loc>http://konk303.github.com/blog/2013/01/04/initializing-dotfile-repository/</loc>
+        <loc>http://output.konk303.com/blog/2013/01/04/initializing-dotfile-repository/</loc>
         <lastmod>2013-01-05T11:10:41+09:00</lastmod>
     </url>
     <url>
-        <loc>http://konk303.github.com/blog/2013/01/05/moved-from-rvm-to-rbenv/</loc>
+        <loc>http://output.konk303.com/blog/2013/01/05/moved-from-rvm-to-rbenv/</loc>
         <lastmod>2013-01-05T12:42:53+09:00</lastmod>
     </url>
     <url>
-        <loc>http://konk303.github.com/blog/archives/</loc>
+        <loc>http://output.konk303.com/blog/archives/</loc>
         <lastmod>2013-01-05T12:42:53+09:00</lastmod>
     </url>
     <url>
-        <loc>http://konk303.github.com/</loc>
+        <loc>http://output.konk303.com/</loc>
         <lastmod>2013-01-05T12:42:53+09:00</lastmod>
     </url>
     <url>
-        <loc>http://konk303.github.com/robots.txt</loc>
+        <loc>http://output.konk303.com/robots.txt</loc>
         <lastmod>2013-01-05T11:10:41+09:00</lastmod>
     </url>
 </urlset>

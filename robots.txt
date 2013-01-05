@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://konk303.github.com/sitemap.xml 
+Sitemap: http://output.konk303.com/sitemap.xml 

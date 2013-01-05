@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[output.konk303.com]]></title>
-  <link href="http://konk303.github.com/atom.xml" rel="self"/>
-  <link href="http://konk303.github.com/"/>
-  <updated>2013-01-05T12:57:49+09:00</updated>
-  <id>http://konk303.github.com/</id>
+  <link href="http://output.konk303.com/atom.xml" rel="self"/>
+  <link href="http://output.konk303.com/"/>
+  <updated>2013-01-05T13:07:29+09:00</updated>
+  <id>http://output.konk303.com/</id>
   <author>
     <name><![CDATA[Kimihiko NAKAMURA (@konk303)]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[moved from rvm to rbenv]]></title>
-    <link href="http://konk303.github.com/blog/2013/01/05/moved-from-rvm-to-rbenv/"/>
+    <link href="http://output.konk303.com/blog/2013/01/05/moved-from-rvm-to-rbenv/"/>
     <updated>2013-01-05T11:41:00+09:00</updated>
-    <id>http://konk303.github.com/blog/2013/01/05/moved-from-rvm-to-rbenv</id>
+    <id>http://output.konk303.com/blog/2013/01/05/moved-from-rvm-to-rbenv</id>
     <content type="html"><![CDATA[<p><a href="https://rvm.io/">rvm</a>から<a href="https://github.com/sstephenson/rbenv">rbenv</a>に移った。<br />
 ミニマルでなかなか良い感じ。</p>
 
@@ -64,9 +64,9 @@ ruby 1.9.3p362 (2012-12-25 revision 38607) [x86_64-darwin12.2.0]
   
   <entry>
     <title type="html"><![CDATA[initializing dotfile repository]]></title>
-    <link href="http://konk303.github.com/blog/2013/01/04/initializing-dotfile-repository/"/>
+    <link href="http://output.konk303.com/blog/2013/01/04/initializing-dotfile-repository/"/>
     <updated>2013-01-04T21:52:00+09:00</updated>
-    <id>http://konk303.github.com/blog/2013/01/04/initializing-dotfile-repository</id>
+    <id>http://output.konk303.com/blog/2013/01/04/initializing-dotfile-repository</id>
     <content type="html"><![CDATA[<p>今までdotfilesはdropboxに置いていて、新しいマシンに移る度にsymlinkして使ってきた。<br />
 けど、去年の途中から職場が変わって</p>
 
@@ -109,9 +109,9 @@ ruby 1.9.3p362 (2012-12-25 revision 38607) [x86_64-darwin12.2.0]
   
   <entry>
     <title type="html"><![CDATA[renewed my blog]]></title>
-    <link href="http://konk303.github.com/blog/2013/01/04/renewed-my-blog/"/>
+    <link href="http://output.konk303.com/blog/2013/01/04/renewed-my-blog/"/>
     <updated>2013-01-04T00:06:00+09:00</updated>
-    <id>http://konk303.github.com/blog/2013/01/04/renewed-my-blog</id>
+    <id>http://output.konk303.com/blog/2013/01/04/renewed-my-blog</id>
     <content type="html"><![CDATA[<p>放置していたので仕切り直し。</p>
 
 <h3>TODO:</h3>

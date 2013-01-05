@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: dotfiles | output.konk303.com]]></title>
-  <link href="http://konk303.github.com/blog/categories/dotfiles/atom.xml" rel="self"/>
-  <link href="http://konk303.github.com/"/>
-  <updated>2013-01-05T12:57:49+09:00</updated>
-  <id>http://konk303.github.com/</id>
+  <link href="http://output.konk303.com/blog/categories/dotfiles/atom.xml" rel="self"/>
+  <link href="http://output.konk303.com/"/>
+  <updated>2013-01-05T13:07:29+09:00</updated>
+  <id>http://output.konk303.com/</id>
   <author>
     <name><![CDATA[Kimihiko NAKAMURA (@konk303)]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[initializing dotfile repository]]></title>
-    <link href="http://konk303.github.com/blog/2013/01/04/initializing-dotfile-repository/"/>
+    <link href="http://output.konk303.com/blog/2013/01/04/initializing-dotfile-repository/"/>
     <updated>2013-01-04T21:52:00+09:00</updated>
-    <id>http://konk303.github.com/blog/2013/01/04/initializing-dotfile-repository</id>
+    <id>http://output.konk303.com/blog/2013/01/04/initializing-dotfile-repository</id>
     <content type="html"><![CDATA[<p>今までdotfilesはdropboxに置いていて、新しいマシンに移る度にsymlinkして使ってきた。<br />
 けど、去年の途中から職場が変わって</p>
 
